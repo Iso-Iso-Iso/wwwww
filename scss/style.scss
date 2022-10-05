@@ -591,24 +591,26 @@ main {
     }
   }
   @media screen and (max-width: 694px) {
-    &__buttons{
+    &__buttons {
       gap: unset;
-      a{
+      a {
         margin-bottom: 24px;
       }
     }
   }
   @media screen and (max-width: 460px) {
-    &__buttons{
+    &__buttons {
       justify-content: space-between;
-      a{
+      gap: 10px;
+      a {
         padding: 16px 24px;
+        flex: 1 1 45%;
       }
     }
   }
   @media screen and (max-width: 385px) {
-    &__buttons{
-      a{
+    &__buttons {
+      a {
         font-size: 12px;
         padding: 16px 16px;
       }
@@ -650,27 +652,27 @@ main {
         border-color: $primary-color;
       }
     }
-    .t-btn-arrows{
+    .t-btn-arrows {
       max-width: 50px;
       width: 100%;
       position: absolute;
       right: 20px;
       top: -25px;
     }
-    .t-btn-swiper-button-prev, .t-btn-swiper-button-next{
+    .t-btn-swiper-button-prev,
+    .t-btn-swiper-button-next {
       background: transparent;
       border: 0;
       width: 30px !important;
       height: 70px !important;
-      
     }
-    path{
+    path {
       fill: $primary-color;
     }
-    .t-btn-swiper-button-prev{
+    .t-btn-swiper-button-prev {
       left: 0 !important;
     }
-    .t-btn-swiper-button-next{
+    .t-btn-swiper-button-next {
       right: 0 !important;
     }
   }
@@ -697,7 +699,9 @@ main {
     }
   }
 }
-
+.block {
+  display: block;
+}
 // COOPERATION
 
 .cooperation {
@@ -825,7 +829,7 @@ main {
     color: $text-color-extra-light;
   }
   @media screen and (max-width: 424px) {
-    .news-slider__wrapper{
+    .news-slider__wrapper {
       margin: 0 auto;
     }
   }
@@ -870,36 +874,36 @@ main {
   }
   &__slide {
     display: block;
-    width: 250px !important;
+    // width: 250px !important;
     height: 250px !important;
     border: 1px solid $text-color-extra-light;
     // margin-left: 20px;
   }
-  .p-1{
+  .p-1 {
     background: url(../img/p-1.png) center center no-repeat;
     @include transition;
-    &:hover{
+    &:hover {
       background: url(../img/starcraft-active.png) center center no-repeat;
     }
   }
-  .p-2{
+  .p-2 {
     background: url(../img/p-2.png) center center no-repeat;
     @include transition;
-    &:hover{
+    &:hover {
       background: url(../img/air-bnn-active.png) center center no-repeat;
     }
   }
-  .p-3{
+  .p-3 {
     background: url(../img/p-3.png) center center no-repeat;
     @include transition;
-    &:hover{
+    &:hover {
       background: url(../img/klinos-active.png) center center no-repeat;
     }
   }
-  .p-4{
+  .p-4 {
     background: url(../img/p-4.png) center center no-repeat;
     @include transition;
-    &:hover{
+    &:hover {
       background: url(../img/Alpine-active.png) center center no-repeat;
     }
   }
@@ -907,7 +911,7 @@ main {
     .swiper-wrapper {
       gap: unset;
     }
-    .partners-slider__slide{
+    .partners-slider__slide {
       margin: 0 auto;
     }
   }
@@ -1152,7 +1156,7 @@ main {
       padding-left: 0;
       justify-content: center;
     }
-    iframe{
+    iframe {
       position: absolute;
       top: 0;
       left: 0;

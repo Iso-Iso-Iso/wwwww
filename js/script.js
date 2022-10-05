@@ -149,7 +149,7 @@ function domLoaded() {
 
   new Swiper(".partners-slider", {
     //   slidesPerView: 4,
-    spaceBetween: 25,
+    spaceBetween: 30,
     navigation: {
       nextEl: ".partners-swiper-button-next",
       prevEl: ".partners-swiper-button-prev",
@@ -160,17 +160,13 @@ function domLoaded() {
         slidesPerView: 4,
       },
       1024: {
-        slidesPerView: 3.2,
+        slidesPerView: 3,
       },
       768: {
-        slidesPerView: 2.8,
-      },
-      425: {
-        slidesPerView: 1.8,
+        slidesPerView: 2,
       },
 
       0: {
-        centeredSlides: "true",
         slidesPerView: 1,
       },
     },
